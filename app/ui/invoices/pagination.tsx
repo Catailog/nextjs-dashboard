@@ -6,13 +6,13 @@ import Link from 'next/link';
 import { generatePagination } from '@/app/lib/utils';
 
 export default function Pagination({ totalPages }: { totalPages: number }) {
-  // NOTE: Uncomment this code in Chapter 10
+  // 참고: 10장에서 이 코드의 주석을 해제하세요
 
   // const allPages = generatePagination(currentPage, totalPages);
 
   return (
     <>
-      {/*  NOTE: Uncomment this code in Chapter 10 */}
+      {/* 참고: 10장에서 이 코드의 주석을 해제하세요 */}
 
       {/* <div className="inline-flex">
         <PaginationArrow

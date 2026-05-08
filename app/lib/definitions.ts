@@ -1,7 +1,7 @@
-// This file contains type definitions for your data.
-// It describes the shape of the data, and what data type each property should accept.
-// For simplicity of teaching, we're manually defining these types.
-// However, these types are generated automatically if you're using an ORM such as Prisma.
+// 이 파일에는 데이터에 대한 타입 정의가 포함되어 있습니다.
+// 데이터의 형태와 각 속성이 허용하는 데이터 타입을 설명합니다.
+// 교육의 편의를 위해 이 타입들을 수동으로 정의합니다.
+// 하지만 Prisma와 같은 ORM을 사용하면 이 타입들은 자동으로 생성됩니다.
 export type User = {
   id: string;
   name: string;
@@ -21,8 +21,8 @@ export type Invoice = {
   customer_id: string;
   amount: number;
   date: string;
-  // In TypeScript, this is called a string union type.
-  // It means that the "status" property can only be one of the two strings: 'pending' or 'paid'.
+  // TypeScript에서 이를 string union 타입이라고 합니다.
+  // "status" 속성은 'pending' 또는 'paid' 두 문자열 중 하나만 가질 수 있다는 의미입니다.
   status: 'pending' | 'paid';
 };
 
@@ -39,7 +39,7 @@ export type LatestInvoice = {
   amount: string;
 };
 
-// The database returns a number for amount, but we later format it to a string with the formatCurrency function
+// 데이터베이스는 amount를 숫자로 반환하지만, 나중에 formatCurrency 함수로 문자열로 변환합니다
 export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {
   amount: number;
 };

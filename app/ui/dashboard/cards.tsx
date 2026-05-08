@@ -16,7 +16,7 @@ const iconMap = {
 export default async function CardWrapper() {
   return (
     <>
-      {/* NOTE: Uncomment this code in Chapter 9 */}
+      {/* 참고: 9장에서 이 코드의 주석을 해제하세요 */}
 
       {/* <Card title="Collected" value={totalPaidInvoices} type="collected" />
       <Card title="Pending" value={totalPendingInvoices} type="pending" />
