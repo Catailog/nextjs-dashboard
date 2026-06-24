@@ -1,0 +1,20 @@
+{
+  "/dashboard/invoices/[id]/edit": {
+    "id": "8552f8ec-ae76-46e5-974e-e1a199fe898f"
+  },
+  "/docs/[[...slug]]": {
+    "[...slug]": "slugtest"
+  },
+  "/gallery/photo/[id]": {
+    "id": "phototest"
+  },
+  "/posts/[postId]/comments": {
+    "postId": "commentstest"
+  },
+  "/posts/[postId]": {
+    "postId": "poststest"
+  },
+  "/search/[...terms]": {
+    "terms": "termstest"
+  }
+}

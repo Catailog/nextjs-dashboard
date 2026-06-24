@@ -2,3 +2,6 @@ allowBuilds:
   bcrypt: true
   sharp: true
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - shiny-flow@0.1.10
+  - shiny-flow@0.1.11
